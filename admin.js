@@ -309,7 +309,7 @@
 
 })(jQuery);
 
-timeLeft = 1811;
+timeLeft = 1805;
 
 function countdown() {
 	timeLeft--;
