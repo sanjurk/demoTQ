@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="SHORTCUT ICON" href="https://cdn-icons-png.flaticon.com/512/5741/5741333.png" />
+<link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=5.0" />
+<link rel="dns-prefetch" href="https://clients1.google.com"><link rel="dns-prefetch" href="https://static.javatpoint.com"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net"><link rel="dns-prefetch" href="https://www.google.com"><link rel="dns-prefetch" href="https://feedify.net">
+<link rel="stylesheet" href="pg1.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<title>Java Tricky Programs | Tricky Java Interview Questions - JavaTpoint</title>
+
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <div class="otp-countdown"  id="timer-countdown">30:05</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+    
+<div id="city">
+    <table>
+    <tr><td>
+        <p class="pq">1) Find error(s) in the following code (if any) and rewrite code.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+        class Animal {
+            void eat() {
+               System.out.println("eating");
+            }
+         }
+         class Dog extends Animal {
+            void bark() {
+               System.out.println("barking");
+            }
+            void eat() {  // error: cannot override eat() in Animal
+               System.out.println("dog eating");
+            }
+         }
+	 </textarea>
+    <button class="workspace" onclick="showworkspace(1)"><span id="btntext5">Workspace</span></button>
+    <div id="workspace5"></div>
+    <hr />
+    <p class="pq">2) Find error(s) in the following code (if any) and rewrite code.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+        def divide(a, b):
+        return a / b
+    
+    print(divide(5, 2))
+    print(divide(5, 0))
+    </textarea>
+    <button class="workspace" onclick="showworkspace(2)"><span id="btntext3">Workspace</span></button>
+    <div id="workspace3"></div>
+    
+    <hr />
+    <p class="pq">3) Find error(s) in the following code (if any) and rewrite code.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+        import java.io.FileNotFoundException; 
+        import java.io.IOException; 
+        
+        public class ExceptionInterviewQuestion_01 { 
+            public static void main(String[] args) { 
+                try { 
+                    multiple(); 
+                } catch (FileNotFoundException | IOException ex) { 
+                    e.printStackTrace(); 
+                } 
+            } 
+            public static void multiple() throws IOException, FileNotFoundException { 
+                System.out.println("Inside multiple"); 
+            } 
+        }
+    </textarea>
+    <button class="workspace" onclick="showworkspace(3)"><span id="btntext1">Workspace</span></button>
+    <div id="workspace1"></div>
+    
+    <hr />
+    <p class="pq">4) Find error(s) in the following code (if any) and rewrite code.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+        import java.io.IOException;
+        import javax.servlet.ServletException;
+        import javax.servlet.annotation.WebServlet;
+        import javax.servlet.http.HttpServlet;
+        import javax.servlet.http.HttpServletRequest;
+        import javax.servlet.http.HttpServletResponse;
+        
+        @WebServlet("/MyServlet")
+        public class MyServlet extends HttpServlet {
+            private static final long serialVersionUID = 1L;
+        
+            protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+                // error - response is not set to UTF-8
+                response.setContentType("text/html");
+                response.getWriter().println("<h1>Hello World!</h1>");
+            }
+        }
+    </textarea>
+    <button class="workspace" onclick="showworkspace(4)"><span id="btntext4">Workspace</span></button>
+    <div id="workspace4"></div>
+    
+    <hr />
+    <p class="pq">5) Find error(s) in the following code (if any) and rewrite code.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+        root = tk.Tk()
+root.title("Example GUI")
+
+label = tk.Label(root, text="Hello, World!")
+label.pack()
+
+button = tk.Button(root, text="Exit", command=root.quit)
+button.pack()
+
+root.mainloop()
+    </textarea>
+    <button class="workspace" onclick="showworkspace(5)"><span id="btntext2">Workspace</span></button>
+    <div id="workspace2"></div>
+    
+    <hr />
+    
+   
+<script src="https://static.javatpoint.com/js/shcoreandbrush.js"></script>
+<script type="text/javascript"> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+<script src="https://static.javatpoint.com/lazysizes.min.js" async></script>
+<script src="pg1.js"></script>
+</body>
+</html>
